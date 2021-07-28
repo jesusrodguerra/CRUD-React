@@ -11,3 +11,171 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.top-nav {
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  z-index: 2;
+}
+
+.btnAdd {
+  border: none;
+  background-color: #EA5455;
+  color: #FFD460;
+  border-radius: 6px;
+  padding: 6px;
+}
+
+.hideBtn {
+  display: none;
+}
+
+.showMenu {
+  position: absolute;
+  width: 100vw;
+  top: 50px;
+  transition: top .8s;
+}
+
+.btnClose-hide {
+  display: none;
+}
+
+.container-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  background-color: #2D4059;
+  color: #fff;
+  padding: 0 6px;
+}
+
+.container-nav h5 {
+  margin: 0;
+  color: #FFD460;
+}
+
+.form-inputs {
+  position: absolute;
+  width: 100vw;
+  top: -220px;
+  transition: top .2s;
+}
+
+.form-container {
+  padding: 4px 9px;
+  background-color: #EA5455;
+}
+
+.name-container, .price-container, .cost-container, .code-container {
+  display: flex;
+  flex-direction: column;
+  margin: 6px 0;
+  color: #fff;
+}
+
+.form-container input {
+  border: none;
+  background-color: #f5f5f5;
+  border-radius: 6px;
+  box-shadow: inset 1px 1px 4px #888;
+  padding: 6px;
+}
+
+.btnAddArticle {
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+  color: #2D4059;
+  padding: 6px;
+  background-color: #FFD460;
+  font-weight: 900;
+}
+
+/* Articles styles */
+.articles-container {
+  margin-top: 60px;
+  padding: 0 10px;
+}
+
+.articles-container h2 {
+  margin-bottom: 0;
+}
+
+.articles-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.articles {
+  border: 1px solid #e1e1e1;
+  border-radius: 6px;
+  margin: 6px 0;
+  padding: 0 10px;
+  width: 40%;
+}
+
+.articles h3 {
+  margin: 12px 0 0 0;
+}
+
+.articles .articles-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4px;
+}
+
+.btnDelete {
+  border: 1px solid red;
+  border-radius: 6px;
+  background-color: transparent;
+  color: red;
+  margin: 0 0 10px 0;
+  padding: 3px 8px;
+}
+
+.btnEdit {
+  border: none;
+  border-radius: 6px;
+  background-color: #EA5455;
+  color: #F9ED69;
+  margin: 0 0 10px 0;
+  padding: 3px 8px;
+}
+
+/* Editing Component Styles */
+
+.editing-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50px;
+  height: 200px;
+  background-color: #EA5455;
+}
+
+.editBtn-container h2 {
+  margin: 0;
+}
+
+.editBtn-container {
+  display: flex;
+}
+
+.editBtn-container button {
+  margin: 0 4px;
+}
+
+
+.btnCloseEdit {
+  width: 100%;
+  border: 1px solid #FFD460;
+  border-radius: 6px;
+  color: #FFD460;
+  padding: 6px;
+  background-color: transparent;
+  font-weight: 900;
+}
